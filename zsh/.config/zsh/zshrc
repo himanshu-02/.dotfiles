@@ -50,7 +50,7 @@ zsh_add_completion "esc/conda-zsh-completion" false
 bindkey -s '^o' 'ranger^M'
 bindkey -s '^f' 'zi^M'
 bindkey -s '^s' 'ncdu^M'
-# bindkey -s '^n' 'nvim $(fzf)^M'
+bindkey -s '^n' 'nvim $(fzf)^M'
 # bindkey -s '^v' 'nvim\n'
 bindkey -s '^z' 'zi^M'
 bindkey '^[[P' delete-char
@@ -85,8 +85,8 @@ xset r rate 210 40
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export TERMINAL="alacritty"
-export BROWSER="brave"
+#export TERMINAL="alacritty"
+#export BROWSER="brave"
 
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
