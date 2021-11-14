@@ -1,0 +1,1 @@
+nvim/plug-config/lspConfig.vim
