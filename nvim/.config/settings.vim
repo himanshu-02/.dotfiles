@@ -1,1 +1,0 @@
-nvim/general/settings.vim

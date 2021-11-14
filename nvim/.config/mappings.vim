@@ -1,1 +1,0 @@
-nvim/keys/mappings.vim

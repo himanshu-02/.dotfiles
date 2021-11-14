@@ -1,1 +1,0 @@
-nvim/themes/airline.vim
