@@ -13,8 +13,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    "    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"    Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     "Plug 'mhinz/vim-startify'
     
@@ -26,6 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
+
     
     call plug#end()
 
