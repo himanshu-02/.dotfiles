@@ -26,10 +26,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
     Plug 'liuchengxu/vim-which-key'
+    " For LSP 
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
-
+    " For web dev 
+    Plug 'alvan/vim-closetag'
+    Plug 'ap/vim-css-color'
     
+
     call plug#end()
 
 

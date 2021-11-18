@@ -7,6 +7,7 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/lspConfig.vim
+source $HOME/.config/nvim/plug-config/closetag.vim 
 luafile $HOME/.config/nvim/lua/plugins/nvim-compe.lua
 luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
 
