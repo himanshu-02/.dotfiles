@@ -1,0 +1,1 @@
+nvim/plug-config/vsnip.vim

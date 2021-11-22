@@ -42,3 +42,14 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+" telescope keybinds default 
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" telescope keybinds Custom
+" nnoremap <leader>fv <cmd>lua require('lua.plugins.nvim-telescope').nconf()<cr>
+" nnoremap <leader>fc <cmd>lua require('lua.plugins.nvim-telescope').browse_code()<cr>
+" nnoremap <leader>fh <cmd>lua require('lua.plugins.nvim-telescope').browse_home()<cr>

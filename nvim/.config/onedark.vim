@@ -1,0 +1,1 @@
+nvim/themes/onedark.vim
