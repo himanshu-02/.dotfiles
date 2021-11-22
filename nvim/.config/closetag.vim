@@ -1,1 +1,0 @@
-nvim/plug-config/closetag.vim
