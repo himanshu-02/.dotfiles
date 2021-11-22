@@ -41,7 +41,7 @@ function M.nconf()
     require('telescope.builtin').file_browser {
         prompt_title = 'Neo Config Browse  ',
         path_display ={'shorten'},
-        cwd = '~/.dotfiles/nvim/.config/nvim',
+        cwd = '~/.config/nvim',
         layout_strategy = 'horizontal',
         layout_config = {preview_width = 0.65, width = .75}
     }
