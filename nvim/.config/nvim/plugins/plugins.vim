@@ -33,6 +33,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'alvan/vim-closetag'
     Plug 'ap/vim-css-color'
     
+    Plug 'hrsh7th/vim-vsnip'
+    Plug 'hrsh7th/vim-vsnip-integ'
+    " For LSP
+    Plug 'williamboman/nvim-lsp-installer'
+
 
     call plug#end()
 
