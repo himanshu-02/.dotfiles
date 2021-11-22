@@ -35,7 +35,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright' }
+local servers = { 'pyright', 'html', 'clangd',  }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -49,15 +49,15 @@ end
 require'lspconfig'.pyright.setup{
   on_attach = on_attach, 
 }
---clangd
--- local clangd_path = '~/.local/share/nvim/lsp_servers/clangd/clangd'
 
+--clangd
 
  require'lspconfig'.clangd.setup{
     cmd = { "clangd-12", "--background-index"},
     filetypes ={ "c", "cpp", "objc", "objcpp"},
     on_attach = on_attach,
 }
+
 --html
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -66,4 +66,26 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
   capabilities = capabilities,
   on_attach = on_attach,
 }
+
+--CSS
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.cssls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach 
+}
+
+
+--bash
+require'lspconfig'.bashls.setup{
+  on_attach = on_attach 
+}
+
+--tsserver
+require'lspconfig'.tsserver.setup{
+  on_attach = on_attach 
+}
+
 
