@@ -9,6 +9,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Themes
     Plug 'joshdick/onedark.vim'
     Plug 'morhetz/gruvbox'
+    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
     "statusline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
