@@ -55,6 +55,7 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 alias m="git checkout master"
 alias s="git checkout stable"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=007"
+source /opt/ros/noetic/setup.zsh 
 
 case "$(uname -s)" in
 

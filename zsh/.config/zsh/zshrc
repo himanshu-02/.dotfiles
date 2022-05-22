@@ -96,4 +96,3 @@ setxkbmap -option caps:escape
 # swap escape and caps
 # setxkbmap -option caps:swapescape
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=039"
-source /opt/ros/noetic/setup.zsh
