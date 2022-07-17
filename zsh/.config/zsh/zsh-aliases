@@ -38,6 +38,10 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 # get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
+# ros commands
+alias get_ros_noetic='source /opt/ros/noetic/setup.zsh && source /opt/ros/noetic/setup.zsh' 
+# source ~/catkin_ws/devel/setup.zsh
+
 # gpg encryption
 # verify signature for isos
 #alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
@@ -55,7 +59,6 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 alias m="git checkout master"
 alias s="git checkout stable"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=007"
-source /opt/ros/noetic/setup.zsh 
 
 case "$(uname -s)" in
 
